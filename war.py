@@ -1,3 +1,4 @@
+#simple implementation of the card game war
 import random
 
 class Card():
@@ -8,10 +9,8 @@ class Card():
     def __gt__(self,other):
         #If rank is equal compare suit
         if self.rank == other.rank:
-            #print(str(self.suit) + " " + str(other.suit))
             return self.suit > other.suit
         else:
-            #print(str(self.rank) + " " + str(other.rank))
             return self.rank > other.rank
     def __str__(self):
         return str(self.rank) + ":" + str(self.suit)
